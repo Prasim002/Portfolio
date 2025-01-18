@@ -1,0 +1,47 @@
+#car{
+    margin-left: 600px;
+    margin-top: 500px;
+    position: absolute;
+    transition: top 0.1s, left 0.1s;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, #fff1eb, #ace0f9);
+    overflow: hidden;
+    position: relative;
+}
+p.text{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 500px;
+    margin-left: 400px;
+}
+div.about{
+    float: left;
+    height: 60px;
+    width: 210px;
+    border: 1px solid black;
+    margin-left: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.enlarged {
+    transform: scale(1.5); 
+}
+.color{
+    background-color: blue;
+}
+.hancy{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid black;
+    z-index: 2;
+}

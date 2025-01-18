@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="car.css">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <p class="text">Move Prasim wherever you want him to go! Use the arrow keys, but remember! Prasim cannot move diagonally! (In this website only)</p>
+        <div id="car"><img src="images/hancy.jpeg" class="hancy"></div>
+        <div class="about" id="d1">About me</div>
+        <div class="about" id="d2">Contact me</div>
+        <div class="about" id="d3">Gallery</div>
+        <div class="about" id="d4">Games</div>
+
+
+
+
+
+
+    </body>
+    <script>
+       
+
+    const step = 20;
+    let x = 20;
+    let y = 20;
+    console.log("Hello world");
+    const car = document.getElementById("car");
+    const alldivs = document.querySelectorAll('.about');
+    move();
+    document.addEventListener("keydown",(event) => {
+        switch (event.key) {
+            case 'ArrowUp':
+                y = y - step;
+                break;
+            case 'ArrowDown':
+                y = y + step;
+                break;
+            case 'ArrowLeft':
+                x = x - step;
+                break;
+            case 'ArrowRight':
+                x = x + step;
+                break;
+            default:
+                break;
+        }
+        move();
+    });
+    function move()
+{
+    const carRect = car.getBoundingClientRect();
+    alldivs.forEach((div)=>{
+        const divRect = div.getBoundingClientRect();
+    
+    if (
+                    carRect.left < divRect.right &&
+                    carRect.right > divRect.left &&
+                    carRect.top < divRect.bottom &&
+                    carRect.bottom > divRect.top
+                ) {
+                    div.classList.add("enlarged"); // Add the enlarged effect
+                    document.addEventListener("keydown",(event) => {
+                        if(event.key == 'Enter')
+                    {
+                        div.classList.add("color");
+                    }
+                    })
+                } else {
+                    div.classList.remove("enlarged"); // Remove if no collision
+                    div.classList.remove("color");
+                }
+            });
+    car.style.left = `${x}px`;
+    car.style.top = `${y}px`;
+}
+    </script>
+</html>
