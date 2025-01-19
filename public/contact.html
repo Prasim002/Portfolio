@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <div class="scanlines"></div>
+
+        <div class="intro-wrap">
+        
+            <div class="noise"></div>
+            <div class="noise noise-moving"></div>
+        
+            <div class="play" data-splitting><-Esc</div>
+            <div class="time">Contact me</div>
+            <img src="images/github.png" alt="" class="button" id="github" onclick="window.open('https://github.com/Prasim002')">
+            <img src="images/linkedin.png" alt="" class="button" id="linkedin" onclick="window.open('https://www.linkedin.com/in/prasim-pokharel-8538aa302/')">
+            <img src="images/instagram.png" alt="" class="button" id="instagram" onclick="window.open('https://www.instagram.com/prasim_pokharel/')">
+
+            <div class="recordSpeed">SLP 0:00:00</div>
+        </div>
+    </body>
+    <script>
+        document.addEventListener("keydown",(event)=>{
+            if(event.key == "Escape")
+        {
+            window.location.href = 'car.html';
+        }
+        });
+    </script>
+</html>

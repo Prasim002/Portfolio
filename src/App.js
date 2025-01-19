@@ -21,9 +21,8 @@ function main()
         <div className='name'><p className='desc'>A beginner/intermediate learner working my way around making websites. This website aims to showcase my learning in web development.</p></div>
 
       </div>
-      <div className='start'>
-        <a href = '/car.html'>Take a tour with Prasim</a>
-      </div>
+        <a href = '/car.html' className='start'>Click here to start!</a>
+
       <img src={mainpic1} className='image1'></img>
       {/* <h1 className='qualifications'>Qualifications</h1>
       <ul className='list'>

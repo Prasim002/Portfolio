@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <title>About me</title>
+        <link rel="stylesheet" href="about.css">
+    </head>
+    <body>
+
+        <div class="scanlines"></div>
+
+        <div class="intro-wrap">
+        
+            <div class="noise"></div>
+            <div class="noise noise-moving"></div>
+        
+            <div class="play" data-splitting><-Esc</div>
+            <div class="time">About me</div>
+
+            <img src="images/hancy1.jpg" class="responsive">
+
+            <br>
+            <p class="desc" >Computer engineering student at IoE Paschimanchal Campus, Pokhara.</p>
+            <p class="desc" id="second">I took CFE React.JS class </p>
+
+            <div class="recordSpeed">SLP 0:00:00</div>
+        </div>
+                
+    </body>
+    <script>
+        document.addEventListener("keydown",(event)=>{
+            if(event.key == "Escape")
+        {
+            window.location.href = 'car.html';
+        }
+        });
+    </script>
+</html>

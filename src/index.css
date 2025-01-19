@@ -29,17 +29,6 @@ nav.topnav{
     overflow: hidden;
     display: flex;
 }
-a{
-    padding: 14px 20px;
-    overflow: hidden;
-    text-decoration: none;
-    font-size: 17px;
-    text-align: center;
-}
-a:hover{
-    background-color: #e4e9f2;
-    border-radius: 50px;
-}
 *{
     margin: 0;
     padding: 0;
@@ -147,4 +136,23 @@ div.tower{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: blue;
+  }
+  a.start{
+    width: 400px;
+    height: 70px;
+    margin-top: 100px;
+    margin-left: 300px;
+    border: 2px solid black;
+    border-radius: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+  }
+  a.start:hover{
+    background-color: blue;
+    cursor: pointer;
+    color: white;
   }

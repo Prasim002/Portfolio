@@ -1,86 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
-#car{
-    margin-left: 600px;
-    margin-top: 485px;
-    position: absolute;
-    z-index: 1;
-    transition: top 0.1s, left 0.1s;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-/* body{
-    background-image: linear-gradient(to right, #fff1eb, #ace0f9);
-    overflow: hidden;
-    position: relative;
-} */
- body{
-  overflow: scroll;
- }
-p.text{
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 50px;
-    width: 500px;
-    margin-left: 400px;
-    margin-top: 20px;
-}
-div.about{
-  font-size: 1.5rem;
-    float: left;
-    height: 60px;
-    width: 210px;
-    border: 1px solid black;
-    margin-left: 100px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-
-}
-.enlarged {
-    transform: scale(1.5); 
-    transition: 0.2s;
-}
-.color{
-    background-color: blue;
-}
-.hancy{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid black;
-    z-index: 2;
-}
-#arrow{
-  font-family: 'Press Start 2P', cursive;
-  margin-top: 420px;
-  margin-left: 700px;
-}
-.blinking{
-  animation: blink 1s steps(2, start) infinite;
-}
-@keyframes blink {
-  from {
-      visibility: visible;
-  }
-  to {
-      visibility: hidden;
-  }
-}
-.colour{
-  background-color: pink;
-}
-
-
-
-
-
-
-
-
 $dark: #270245;
 $light: #fd5d8d;
 $white: #fff;
@@ -293,4 +211,27 @@ body {
 @keyframes type {
   0%, 19% {opacity:0;}
   20%, 100% {opacity:1;}
+}
+
+
+
+img.button{
+    height: 300px;
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 150px;
+    background-color: white;
+}
+img.button:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+#github{
+    border-radius: 50%;
+}
+#linkedin{
+    border-radius: 30px;
+}
+#instagram{
+    border-radius: 69px;
 }
