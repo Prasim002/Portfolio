@@ -219,15 +219,17 @@ body {
 }
 
 img.button{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     margin-left: 100px;
     margin-top: 150px;
     background-color: white;
+    transition: 0.2s;
 }
 img.button:hover{
     cursor: pointer;
     background-color: grey;
+    transform: scale(1.2);
 }
 #github{
     border-radius: 50%;
@@ -237,4 +239,7 @@ img.button:hover{
 }
 #instagram{
     border-radius: 69px;
+}
+#whatsapp{
+  border-radius: 50%;
 }
