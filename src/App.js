@@ -6,18 +6,17 @@ function main()
     return(
       <div className='hero'>
       <>
-      <button className='menu1'>
-        {/* <img src={fast} className='menu'></img> */}
-      </button>
-      {/* <nav className='topnav'>
-        <a href=''>About me</a>
-        <a href=''>Chill</a>
-        <a href=''>Contact me</a>
-        <a href=''>Links</a>
-
-      </nav> */}
+      <div className='torso'></div>
+      <div className='torso' id='t1'></div>
+      <div className='torso' id='t2'></div>
+      <div className='torso' id='t3'></div>
+      <div className='torso' id='t4'></div>
+      <div className='torso' id='t5'></div>
+      <div className='torso' id='t6'></div>
+      <p className='react'>Made with React</p>
       <hr></hr>
       <div className='body'>
+        
         <div className='hello'>Prasim Pokharel</div>
         <div className='name'><p className='desc'>A beginner/intermediate learner working my way around making websites. This website aims to exemplify my learning in web development.</p></div>
 

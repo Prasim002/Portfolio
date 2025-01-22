@@ -13,10 +13,11 @@ body{
     top: 22px;
     left: 60%;
     position: absolute;
+    z-index: 2;
 }
 div.body{
     margin-left: 200px;
-    margin-top: 180px;
+    margin-top: 155px;
     display: block;
     position: relative;
     width: 900px;
@@ -75,11 +76,12 @@ li.description2{
 hr{
     border-top: solid 1px navy;
     border-bottom: solid 1px blue;
-    margin-top: 260px;
+    margin-top: 230px;
     position: absolute;
     width: 100%;
     height: 10px;
     background-image: linear-gradient(purple, navy, blue);
+    z-index: 1;
 }
 div.hero{
 
@@ -170,3 +172,52 @@ button.start{
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+
+  p.react{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+
+
+  div.torso{
+    border: 20px solid mediumturquoise;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: mediumturquoise;
+    margin-top: 00px;
+    margin-left: 920px;
+}
+#t1{
+    background-color: lightskyblue;
+    border-color: lightskyblue;
+    margin-top: 50px;
+    margin-left: 980px;
+}
+#t2{
+    margin-top: 150px;
+    margin-left: 910px;
+}
+#t3{
+    background-color: lightskyblue;
+    border-color: lightskyblue;
+    margin-top: 260px;
+    margin-left: 900px;
+}
+#t4{
+    margin-top: 300px;
+    margin-left: 1000px;
+}
+#t5{
+    background-color: lightskyblue;
+    border-color: lightskyblue;
+    margin-top: 250px;
+    margin-left: 1000px;
+}
+#t6{
+    margin-top: 180px;
+    margin-left: 1050px;
+}
