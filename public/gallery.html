@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="gallery.css">
+    </head>
+    <body>
+        <div class="scanlines"></div>
+
+        <div class="intro-wrap">
+        
+            <div class="noise"></div>
+            <div class="noise noise-moving"></div>
+        
+            <div class="play" data-splitting><-Esc</div>
+            <div class="time">Gallery</div>
+
+           <div class="pics">
+            <img src="images/sunset.jpg" alt="" class="pics">
+            
+            <img src="images/sunrise.jpg" alt="" class="pics" id="lake1">
+
+            <img src="images/fog.jpg" alt="" class="pics" id="fog">
+            
+            <img src="images/stupa.jpg" alt="" class="pics" id="stupa">
+            
+           </div>
+           <div class="desc">
+            <p id="sunset" class="pics">Taken in Begnas lake at sunset.</p>
+            <p id="sunrise" class="pics">Taken from Sarangkot at sunrise.</p>
+            <p id="fog" class="pics">Taken in Palpa in the morning.</p>
+            <p id="stupa" class="pics">Stunning view of the Bouddhanath Stupa.</p>
+           </div>
+            <div class="recordSpeed">SLP 0:00:00</div>
+        </div>
+    </body>
+    <script>
+        document.addEventListener("keydown",(event)=>{
+            if(event.key == "Escape")
+        {
+            window.location.href = 'car.html';
+        }
+        });
+    </script>
+</html>

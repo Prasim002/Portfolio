@@ -1,3 +1,12 @@
+body{
+    background: #780206;
+    background: -webkit-linear-gradient(to right, #061161, #780206);
+    background: linear-gradient(to right, #061161, #780206);
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: thistle;
+}
 .image1{
     height: 500px;
     width: 550px;
@@ -20,15 +29,11 @@ div.hello{
 div.name{
     font-size: 80px;
     display: block;
-    width: 600px;
+    width: 700px;
 
 }
-nav.topnav{
-    background-color: transparent;
-    height: 50px;
-    overflow: hidden;
-    display: flex;
-}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -72,13 +77,12 @@ hr{
     position: absolute;
     width: 100%;
     height: 10px;
-    background-image: linear-gradient(navy, blue, lightblue);
+    background-image: linear-gradient(purple, navy, blue);
 }
-body{
-    background-image: linear-gradient(to right, #fff1eb, #ace0f9);
+div.hero{
+
     height: 100vh; 
     width: 100vw;
-    overflow-x: hidden;
 }
 p.desc{
     font-size: 30px;
@@ -103,6 +107,7 @@ button.start{
     margin-left: 400px;
     height: 60px;
     width: 150px;
+    transition: 0.2s;
 }
 .start:onclick{
     background-color: blue;
@@ -112,24 +117,19 @@ button.start{
                 margin-top: 100px;
                 position: absolute;
 }
-div.tower{
-    background-color: blue;
-    height: 700px;
-    width: 200px;
-}
 /* width */
 ::-webkit-scrollbar {
-    width: 2px;
+    width: 5px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #ace0f9;
+    background: navy;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: blue;
+    background: purple;
     border-radius: 10px;
   }
   
@@ -140,19 +140,30 @@ div.tower{
   a.start{
     width: 400px;
     height: 70px;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-left: 300px;
-    border: 2px solid black;
+    border: 2px solid thistle;
     border-radius: 30px;
     justify-content: center;
     display: flex;
     align-items: center;
     font-size: 40px;
-    color: black;
+    color: thistle;
     text-decoration: none;
+    transition: 0.2s;
   }
   a.start:hover{
     background-color: blue;
     cursor: pointer;
-    color: white;
+    color: turquoise;
+    border-color: red;
+  }
+  a:active{
+    border: black;
+    background-color: darkblue;
+}
+  p.promo{
+    margin-top: 30px;
+    margin-left: 100px;
+    font-size: 30px;
   }

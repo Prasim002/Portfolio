@@ -213,7 +213,10 @@ body {
   20%, 100% {opacity:1;}
 }
 
-
+*{
+  margin: 0;
+  padding: 0;
+}
 
 img.button{
     height: 300px;

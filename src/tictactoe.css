@@ -1,0 +1,30 @@
+button.square{
+    outline: none;
+    position: relative;
+    border: 1px solid;
+    border-radius: 0px;
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 19px;
+}
+div.row{
+    margin-bottom: -3px;
+    padding: 0px;
+    margin-left: 900px;
+}
+button.square:hover{
+    background-color: grey;
+}
+div.status{
+    margin-top: -250px;
+    margin-left: 900px;
+}
+div.text{
+    position: absolute;
+    margin-left: 800px;
+    margin-top: -330px;
+    font-size: 30px;
+}

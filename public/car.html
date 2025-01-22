@@ -6,21 +6,19 @@
         </style>
     </head>
     <body>
-        <div class="scanlines"></div>
-
-<div class="intro-wrap">
+    <div class="scanlines"></div>
+    <div class="intro-wrap">
 
 	<div class="noise"></div>
 	<div class="noise noise-moving"></div>
 
-	<div class="play" data-splitting>ENTER</div>
-	<div class="time">--:--</div>
+	<div class="play" data-splitting>Enter</div>
+	<div class="time" id="times">--:--</div>
     <p class="text">Move Prasim wherever you want to go! Use the arrow keys.</p>
     <div id="car"><img src="images/hancy.jpeg" class="hancy"></div>
     <div class="about" id="d1">About me</div>
     <div class="about" id="d2">Contact me</div>
     <div class="about" id="d3">Gallery</div>
-    <div class="about" id="d4">Games</div>
     <div id="arrow" class="blinking">  <- Here  </div>
 	<div class="recordSpeed">SLP 0:00:00</div>
 </div>
@@ -77,10 +75,10 @@
                     carRect.bottom > divRect.top
                 ) {
                     div.classList.add("enlarged");
-                    div.classList.add("color"); // Add the enlarged effect
+                    div.classList.add("color");
                     
                 } else {
-                    div.classList.remove("enlarged"); // Remove if no collision
+                    div.classList.remove("enlarged");
                     div.classList.remove("color");
                 }
             });
@@ -94,13 +92,12 @@
     const d1 = document.getElementById('d1');
         const d2 = document.getElementById('d2');
         const d3 = document.getElementById('d3');
-        const d4 = document.getElementById('d4');
         var offset1 = d1.getBoundingClientRect();
         var offset2 = d2.getBoundingClientRect();
         var offset3 = d3.getBoundingClientRect();
-        var offset4 = d4.getBoundingClientRect();
-    if(carRect.left<offset1.right && carRect.right>offset1.left && carRect.top<offset1.bottom && carRect.top>offset1.top)
+    if(carRect.left<offset1.right && carRect.right>offset1.left && carRect.top<offset1.bottom && carRect.bottom>offset1.top)
     {
+        document.getElementById("times").innerHTML = "About me";
         document.addEventListener("keydown",(event)=>{
             if(event.key == 'Enter')
         {
@@ -108,8 +105,10 @@
         }
         });
     }
-    if(carRect.left<offset2.right && carRect.right>offset2.left && carRect.top<offset2.bottom && carRect.top>offset2.top)
+
+    else if(carRect.left<offset2.right && carRect.right>offset2.left && carRect.top<offset2.bottom && carRect.bottom>offset2.top)
     {
+        document.getElementById("times").innerHTML = "Contact me";
         document.addEventListener("keydown",(event)=>{
             if(event.key == 'Enter')
         {
@@ -117,8 +116,10 @@
         }
         });
     }
-    if(carRect.left<offset3.right && carRect.right>offset3.left && carRect.top<offset3.bottom && carRect.top>offset3.top)
+
+    else if(carRect.left<offset3.right && carRect.right>offset3.left && carRect.top<offset3.bottom && carRect.bottom>offset3.top)
     {
+        document.getElementById("times").innerHTML = "Gallery";
         document.addEventListener("keydown",(event)=>{
             if(event.key == 'Enter')
         {
@@ -126,14 +127,9 @@
         }
         });
     }
-    if(carRect.left<offset4.right && carRect.right>offset4.left && carRect.top<offset4.bottom && carRect.top>offset4.top)
-    {
-        document.addEventListener("keydown",(event)=>{
-            if(event.key == 'Enter')
-        {
-            window.location.href = 'games.html';
-        }
-        });
+
+    else{
+        document.getElementById("times").innerHTML = "--:--";
     }
 }
     </script>
