@@ -13,18 +13,19 @@ button.square{
 div.row{
     margin-bottom: -3px;
     padding: 0px;
-    margin-left: 900px;
+    margin-left: 100px;
 }
 button.square:hover{
     background-color: grey;
 }
 div.status{
-    margin-top: -250px;
-    margin-left: 900px;
+    margin-top: -200px;
+    margin-left: 100px;
 }
 div.text{
     position: absolute;
-    margin-left: 800px;
-    margin-top: -330px;
-    font-size: 30px;
+    margin-left: 50px;
+    margin-top: -250px;
+    font-size: 40px;
+    font-weight: bold;
 }

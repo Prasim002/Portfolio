@@ -24,16 +24,11 @@ function main()
         <a href = '/car.html' className='start'>Click here to start!</a>
       <img src={mainpic1} className='image1'></img>
       <p className='promo'>Don't know what exemplify means? Find its meaning right here:</p>
-      {/* <h1 className='qualifications'>Qualifications</h1>
-      <ul className='list'>
-        <li>Schooling</li>
-        <li>Bachelors</li>
-      </ul>
-      <ul className='description'>
-        <li className='description1'>Motherland Secondary School<br></br>2021-2023</li>
-        <li className='description2'>Tribhuwan University<br></br>Institute of Engineering<br></br>Paschimanchal Campus, Pokhara<br></br>2024-Present</li>
-      </ul> */}
+      <h1>Dictionary</h1>
+      <p className='apiref'>API : Dictionary API</p>
       <Dictionary />
+      <br></br>
+      <br></br>
       <Board />
       </>
       </div>

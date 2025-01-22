@@ -89,7 +89,7 @@ div.hero{
     width: 100vw;
 }
 p.desc{
-    font-size: 30px;
+    font-size: 20px;
 }
 .menu{
     height: 30px;
@@ -142,8 +142,8 @@ button.start{
     background: blue;
   }
   a.start{
-    width: 400px;
-    height: 70px;
+    width: 300px;
+    height: 50px;
     margin-top: 30px;
     margin-left: 300px;
     border: 2px solid thistle;
@@ -151,7 +151,7 @@ button.start{
     justify-content: center;
     display: flex;
     align-items: center;
-    font-size: 40px;
+    font-size: 30px;
     color: thistle;
     text-decoration: none;
     transition: 0.2s;
@@ -220,4 +220,9 @@ button.start{
 #t6{
     margin-top: 180px;
     margin-left: 1050px;
+}
+
+
+p.apiref{
+    margin-left: 60px;
 }
